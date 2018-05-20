@@ -31,7 +31,7 @@ public class TimeServerHandle implements Runnable {
                     break;
                 }
                 System.out.println("The time server receive order :" + body);
-                currentTime = "QUERY TIME ORDER ".equalsIgnoreCase(body) ? new Date(System.currentTimeMillis()).toString() : "Bad Order";
+                currentTime = "QUERY TIME ORDER".equalsIgnoreCase(body) ? new Date(System.currentTimeMillis()).toString() : "Bad Order";
                 out.println(currentTime);
 
             }
